@@ -1,0 +1,36 @@
+#include<iostream>
+#include<conio.h>
+#include<iomanip>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+	float gal1, gal2, prevbill;
+	
+	cout << "Recent gallons consumption: ";
+	cin >> gal1;
+	cout << "Previous gallons consumption: ";
+	cin >> gal2;
+	cout << "Unpaid balance: ";
+	cin >> prevbill;
+	
+	float cpgallon, firstb, recbill, finalb, secondb, totalb;
+	cpgallon=abs(gal1-gal2);
+	recbill=cpgallon*1.10;
+	firstb=recbill+35;
+	
+	if (prevbill>0)
+		secondb=prevbill+20;
+	else
+		secondb=0;
+		
+	totalb=firstb+secondb;
+	
+	cout << "\nYour total water bill is P" << totalb << ".";
+	
+	_getch();
+	return 0;
+	
+}
