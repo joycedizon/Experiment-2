@@ -1,0 +1,31 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int a, b, c, d;
+		c=1;
+	
+	cout << "Fibonacci numbers:\n";
+	cout << "0,";
+	
+	for (d=0; d<=20; d++)
+	{
+		a=b+c;
+		b=c;
+		c=a;
+		
+		cout << b << ",";
+		
+		if (d==19)
+		{
+			cout << "10946";
+			break;
+		}
+	}
+	
+	_getch();
+	return 0;
+}
