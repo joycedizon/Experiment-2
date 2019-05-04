@@ -9,7 +9,7 @@ int main()
 	
 	cout << "Enter a number: ";
 	cin >> x;
-	
+	cout << "Multiplication table of " << x << ":\n";
 	y=1;
 	while (y<=10)
 	{
