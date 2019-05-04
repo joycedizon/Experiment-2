@@ -12,9 +12,9 @@ int main()
 	cout << "How many columns: ";
 	cin >> column;
 	
-	for (cl=1; cl<=column; cl++)
+	for (rw=1; rw<=row; rw++)
 	{
-		for (rw=1; rw<=row; rw++)
+		for (cl=1; cl<=column; cl++)
 		{
 			cout << "*";
 		}
